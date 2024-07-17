@@ -2,14 +2,17 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/card_background"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:id="@+id/main"
+    android:padding="16dp"
+    tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
+        android:layout_marginTop="16dp"
         android:orientation="horizontal">
 
         <TextView
@@ -20,6 +23,7 @@
             android:textColor="@color/white"
             android:textStyle="bold"
             android:textSize="15sp"
+            android:textAlignment="center"
             android:text="@string/red_card" />
 
         <TextView
@@ -27,6 +31,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textAlignment="center"
             android:textColor="@color/white"
             android:textStyle="bold"
             android:textSize="15sp"
@@ -39,6 +44,7 @@
             android:layout_weight="1"
             android:textColor="@color/white"
             android:textStyle="bold"
+            android:textAlignment="center"
             android:textSize="15sp"
             android:text="@string/life" />
 
@@ -47,6 +53,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textAlignment="center"
             android:textColor="@color/white"
             android:textStyle="bold"
             android:textSize="15sp"
@@ -57,6 +64,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textAlignment="center"
             android:textColor="@color/white"
             android:textStyle="bold"
             android:textSize="15sp"
@@ -69,8 +77,72 @@
             android:layout_weight="1"
             android:textColor="@color/white"
             android:textStyle="bold"
+            android:textAlignment="center"
             android:textSize="15sp"
             android:text="0" />
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="100dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/redCardImage"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:src="@drawable/red0"
+            android:layout_marginEnd="16dp"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/blackCardImage"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:src="@drawable/black0"/>
+
+    </LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="50dp"
+       android:orientation="horizontal"
+       android:gravity="center">
+
+       <androidx.appcompat.widget.AppCompatButton
+           android:id="@+id/playButton"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Play"
+           android:layout_marginStart="0dp"
+           android:background="@color/amber"
+           android:textColor="@color/white"
+           android:textStyle="bold"
+           android:textSize="16sp"
+           android:letterSpacing=".15"/>
+
+       <androidx.appcompat.widget.AppCompatButton
+           android:id="@+id/resetButton"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Reset"
+           android:layout_marginStart="40dp"
+           android:background="@color/red"
+           android:textStyle="bold"
+           android:textColor="@color/white"
+           android:letterSpacing=".15"
+           android:textSize="16sp"/>
+   </LinearLayout>
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:text="result"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"/>
 
 </LinearLayout>
