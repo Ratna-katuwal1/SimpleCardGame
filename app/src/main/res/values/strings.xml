@@ -4,5 +4,6 @@
     <string name="red_card">Red Card</string>
     <string name="life">Life</string>
     <string name="black_card">Black Card</string>
+    <string name="play">Play</string>
 
 </resources>
