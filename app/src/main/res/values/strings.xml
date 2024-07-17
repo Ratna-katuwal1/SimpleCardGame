@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">LabSheetTwo</string>
-    <string name="play">Play</string>
-    <string name="card_msg_black">This is black</string>
-    <string name="card_msg_red">This is red</string>
     <string name="reset">Reset</string>
+    <string name="red_card">Red Card</string>
+    <string name="life">Life</string>
+    <string name="black_card">Black Card</string>
 
 </resources>
