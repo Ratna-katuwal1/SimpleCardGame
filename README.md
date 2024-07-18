@@ -28,7 +28,7 @@ To install and run this application on your Android device, follow these steps:
 
 **Clone this repository to your local machine:**
 **Copy code:**
-git clone https://github.com/yourusername/card-game-app.git
+git clone https://github.com/Ratna-katuwal1/SimpleCardGame.git
 
 Open the project in Android Studio.
 
